@@ -1,0 +1,90 @@
+{
+  "item": [
+    {
+      "id": "3111f911-abc2-491e-aca5-6075a31707d8",
+      "name": "Get all products",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "5000",
+          "path": [
+            "products"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "00e88c1b-2a99-4353-8856-0358f5a24029",
+      "name": "Get product by ID",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "5000",
+          "path": [
+            "products",
+            ":id"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "type": "any",
+              "key": "id"
+            }
+          ]
+        },
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "9496fef2-34d6-43f7-8aa8-58a8325df7b2",
+      "name": "Create a new product",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "5000",
+          "path": [
+            "products"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Sample Product\",\"description\":\"Test product\",\"price\":100,\"image\":\"image.jpg\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [],
+  "info": {
+    "_postman_id": "6d41c36c-67f7-4256-8d7f-bb27d272e9ac",
+    "name": "ProductCatalog API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  }
+}
