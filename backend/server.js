@@ -1,12 +1,12 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const productRoutes = require('./api/productRoutes');
+const productRoutes = require("./api/productRoutes");
 const app = express();
 
 // Only allow requests from this domain
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: /localhost/,
 };
 app.use(cors(corsOptions));
 app.use(express.json());
@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
   `);
 });
 
-app.use('/products', productRoutes);
+app.use("/products", productRoutes);
 
 // Start the server
 const PORT = process.env.PORT || 5000;
