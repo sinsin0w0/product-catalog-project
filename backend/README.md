@@ -41,11 +41,12 @@
 ## Live Deployments - **Backend (API)**:
 ✔ Service deployed to stack product-catalog-backend-dev (78s)
 
-endpoints:
-  GET - https://fenseflvoh.execute-api.us-east-1.amazonaws.com/dev/products
-  GET - https://fenseflvoh.execute-api.us-east-1.amazonaws.com/dev/product/{id}
-  POST - https://fenseflvoh.execute-api.us-east-1.amazonaws.com/dev/product
-functions:
-  getProducts: product-catalog-backend-dev-getProducts (8.6 MB)
-  getProduct: product-catalog-backend-dev-getProduct (8.6 MB)
-  createProduct: product-catalog-backend-dev-createProduct (8.6 MB)
+### Endpoints:
+- **GET** - [https://fenseflvoh.execute-api.us-east-1.amazonaws.com/dev/products](https://fenseflvoh.execute-api.us-east-1.amazonaws.com/dev/products)
+- **GET** - [https://fenseflvoh.execute-api.us-east-1.amazonaws.com/dev/product/{id}](https://fenseflvoh.execute-api.us-east-1.amazonaws.com/dev/product/{id})
+- **POST** - [https://fenseflvoh.execute-api.us-east-1.amazonaws.com/dev/product](https://fenseflvoh.execute-api.us-east-1.amazonaws.com/dev/product)
+
+### Functions:
+- **getProducts**: `product-catalog-backend-dev-getProducts (8.6 MB)`
+- **getProduct**: `product-catalog-backend-dev-getProduct (8.6 MB)`
+- **createProduct**: `product-catalog-backend-dev-createProduct (8.6 MB)`
