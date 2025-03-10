@@ -196,11 +196,17 @@ The backend exposes the following API endpoints:
   ```
 ---
 
-## Live Deployments (If Applicable)
+## Live Deployments - **Backend (API)**:
+✔ Service deployed to stack product-catalog-backend-dev (78s)
 
-- **Backend (API)**: [https://your-backend-api.com](https://your-backend-api.com)
-- **Web Frontend**: [https://your-web-frontend.com](https://your-web-frontend.com)
-- **Mobile Frontend**: Available on the App Store / Google Play (optional)
+endpoints:
+  GET - https://fenseflvoh.execute-api.us-east-1.amazonaws.com/dev/products
+  GET - https://fenseflvoh.execute-api.us-east-1.amazonaws.com/dev/product/{id}
+  POST - https://fenseflvoh.execute-api.us-east-1.amazonaws.com/dev/product
+functions:
+  getProducts: product-catalog-backend-dev-getProducts (8.6 MB)
+  getProduct: product-catalog-backend-dev-getProduct (8.6 MB)
+  createProduct: product-catalog-backend-dev-createProduct (8.6 MB)
 
 ---
 

@@ -1,0 +1,33 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: sinsin
+# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
+app: product-catalog
+service: product-catalog-backend  # This is your service name (can be anything)
+
+provider:
+  name: aws
+  runtime: nodejs16.x  # AWS Lambda runtime (can change depending on your stack)
+  region: us-east-1  # AWS Region (you can change it)
+
+functions:
+  getProducts:
+     handler: handler.getProducts
+     events:
+       - http:
+           path: products  # No ID, this is to get all products
+           method: get
+          
+  getProduct:
+    handler: handler.getProduct
+    events:
+      - http:
+          path: product/{id}
+          method: get
+
+  createProduct:
+    handler: handler.createProduct
+    events:
+      - http:
+          path: product
+          method: post
+
